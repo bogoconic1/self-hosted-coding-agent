@@ -24,6 +24,14 @@ Then tunnel it to your machine:
 ssh -N -L 127.0.0.1:18000:127.0.0.1:8000 -p <port> root@<host>
 ```
 
+## Run Claude Code
+
+```bash
+.venv/bin/python run_claude.py --config config.yaml <repo> <run-dir>
+```
+
+Wait until `/mcp` shows `ws` connected, then type your task. Add `--resume` to continue a session.
+
 ## Tools
 
 ```bash

@@ -19,3 +19,9 @@ model:
 vllm:
   version: 0.31.0
   venv: /venv/qwen-vllm
+
+claude_code:
+  local_port: 18000
+  effort: xhigh
+  max_output_tokens: 32768
+  mcp_tool_timeout_ms: 90000

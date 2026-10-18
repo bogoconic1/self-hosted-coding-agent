@@ -1,0 +1,17 @@
+vllm:
+  version: 0.31.0
+  port: 8000
+  model: Qwen/Qwen3.8-27B
+  serve_args:
+    revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
+    served-model-name: qwen-local
+    max-model-len: 262144
+    max-num-seqs: 8
+    reasoning-parser: qwen3
+    enable-auto-tool-choice: true
+    tool-call-parser: qwen3_coder
+
+claude:
+  bare: true
+  permission_mode: default
+  effort: xhigh

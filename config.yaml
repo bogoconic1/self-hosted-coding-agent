@@ -1,0 +1,7 @@
+tools:
+  command_timeout_s: 60
+  kill_grace_s: 5
+  stream_chars: 5000
+  read_lines: 150
+  read_chars: 10000
+  diff_chars: 5000

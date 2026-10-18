@@ -1,6 +1,10 @@
+modal:
+  gpu: H100
+  startup_timeout_s: 1800
+  idle_shutdown_s: 900
+
 vllm:
   version: 0.31.0
-  port: 8000
   model: Qwen/Qwen3.8-27B
   serve_args:
     revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0

@@ -11,6 +11,19 @@ uv venv .venv --python 3.12
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
+## Model (GPU host)
+
+```bash
+uv run --no-project --with pyyaml==6.0.3 python serve_qwen.py install --config config.yaml
+uv run --no-project --with pyyaml==6.0.3 python serve_qwen.py serve --config config.yaml
+```
+
+Then tunnel it to your machine:
+
+```bash
+ssh -N -L 127.0.0.1:18000:127.0.0.1:8000 -p <port> root@<host>
+```
+
 ## Tools
 
 ```bash

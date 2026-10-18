@@ -5,3 +5,17 @@ tools:
   read_lines: 150
   read_chars: 10000
   diff_chars: 5000
+
+model:
+  checkpoint: Qwen/Qwen3.8-27B
+  revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
+  served_name: qwen-local
+  port: 8000
+  max_model_len: 262144
+  max_num_seqs: 8
+  reasoning_parser: qwen3
+  tool_call_parser: qwen3_coder
+
+vllm:
+  version: 0.31.0
+  venv: /venv/qwen-vllm
